@@ -1,4 +1,4 @@
 My first project file.
 Some initial content.
 Work in progress...
-Line 4 *** Main Branch Modification ***.
+Line 4 - Combined: Main changed it AND Feature changed it.
