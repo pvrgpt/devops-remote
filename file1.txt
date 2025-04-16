@@ -1,3 +1,4 @@
 My first project file.
 Some initial content.
 Work in progress...
+Line 4 for merge demo.
