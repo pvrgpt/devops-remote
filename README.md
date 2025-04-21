@@ -51,7 +51,7 @@ This repository documents the initial phases of the learning plan:
     *   Running External Commands (`subprocess.run`, error handling)
     *   Control Flow (`if`/`elif`/`else`, `for`, `while`)
     *   Functions (`def`, parameters, return values, scope)
-    *   Example Scripts: `hello.py`, `syntax_basics.py`, `run_commands.py`, `conditions.py`, `loops.py`, `functions_intro.py`, `manage_service.py`
+    *   Example Scripts:  `syntax.py`, `run_commands.py`, `conditions.py`, `loops.py`, `functions.py`, `manage_service.py`
 
 ## How to Use
 
