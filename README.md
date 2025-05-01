@@ -52,6 +52,53 @@ This repository documents the initial phases of the learning plan:
     *   Control Flow (`if`/`elif`/`else`, `for`, `while`)
     *   Functions (`def`, parameters, return values, scope)
     *   Example Scripts:  `syntax.py`, `run_commands.py`, `conditions.py`, `loops.py`, `functions.py`, `manage_service.py`
+    
+### 4. Intro to AWS & Core Services
+
+Introduced to Cloud Computing concepts (IaaS, PaaS, SaaS) and the AWS Global Infrastructure (Regions, Availability Zones). Learned about the Shared Responsibility Model and the AWS Free Tier.
+*   **Account Setup:** Created an AWS account and secured the root user with MFA.
+*   **IAM (Identity & Access Management):** Understood Users, Groups, Roles, Policies, and the Principle of Least Privilege. Created an administrative IAM user with MFA for regular tasks.
+*   **EC2 (Elastic Compute Cloud):** Launched a basic Ubuntu EC2 instance. Learned about AMIs, Instance Types, SSH Key Pairs for secure login, and Security Groups (basic firewall rules). Connected to the instance using SSH. Terminated the instance.
+*   **S3 (Simple Storage Service):** Basic introduction to object storage concepts (Buckets, Objects, Keys). Created a bucket, uploaded/downloaded an object via the console.
+*   **VPC (Virtual Private Cloud):** Conceptual overview of AWS networking (CIDR, Subnets, Route Tables, Internet Gateway) and how EC2 instances fit within a VPC. Understood the role of the Default VPC.
+
+### 5. Docker Fundamentals
+
+Learned about containerization concepts and why Docker is used to solve the "it works on my machine" problem. Key concepts covered:
+*   Images vs. Containers
+*   Dockerfile basics (FROM, WORKDIR, COPY, RUN, EXPOSE, ENV, CMD)
+*   Docker Engine (Daemon, API, CLI)
+*   Docker Hub / Registries
+*   Running containers (`docker run`, `-it`, `-d`, `-p`, `--name`)
+*   Managing containers (`docker ps`, `docker logs`, `docker stop`, `docker rm`)
+*   Managing images (`docker images`, `docker rmi`)
+*   Installed Docker Desktop for WSL integration.
+*   Built a custom image for a simple Python Flask application.
+
+## Docker Volumes
+
+Understood the need for persistent data for containers, as container filesystems are ephemeral.
+*   Learned about Docker Volumes as the preferred persistence mechanism.
+*   Used `-v volume-name:/container/path` to mount volumes.
+*   Demonstrated data persistence across container removal.
+*   Briefly discussed Bind Mounts (`-v /host/path:/container/path`) for development/config.
+
+### 6. Docker Compose
+
+Learned how Docker Compose simplifies managing multi-container applications.
+*   Defined services, networks, and volumes in a `docker-compose.yml` file.
+*   Used `docker compose up -d --build` to build and start services.
+*   Used `docker compose ps`, `docker compose logs`, and `docker compose down` to manage the application stack.
+*   Configured a simple Flask app service using Compose.
+
+### 7. CI/CD Concepts
+
+Introduced the core ideas behind Continuous Integration (CI) and Continuous Delivery/Deployment (CD).
+*   **CI:** Frequent code integration, automated builds, automated testing. Goal: Early error detection, rapid feedback.
+*   **CD (Delivery):** Automatically deploying validated builds to staging environments. Goal: Always having a releasable version.
+*   **CD (Deployment):** Automatically deploying validated builds to production. Goal: Maximum release velocity.
+*   Discussed benefits (speed, quality, reduced risk) and common tools (Jenkins, GitLab CI, GitHub Actions).
+*   Recognized Docker's role in providing consistent build/test environments and as a deployment artifact.
 
 ## How to Use
 
