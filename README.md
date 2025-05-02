@@ -100,6 +100,16 @@ Introduced the core ideas behind Continuous Integration (CI) and Continuous Deli
 *   Discussed benefits (speed, quality, reduced risk) and common tools (Jenkins, GitLab CI, GitHub Actions).
 *   Recognized Docker's role in providing consistent build/test environments and as a deployment artifact.
 
+### 8. AWS Deeper Dive.[VPC(Routing,Security), E2C(AMIs, Storage options, User Data)]
+*   **Creating a custom AMI from an instance**
+    *   Prepare SSH Key and Security Group.
+    *   Launch EC2 Instance with User Data.
+    *   Verify Nginx Installation: Connect via SSH and check if Nginx is running without manual installation. Test web access.
+    *   Create Custom AMI.
+    *   Terminate Original Instance.
+    *   Launch New Instance from Custom AMI.
+    *   Verify New Instance.
+    *   Terminate Second Instance.
 ## How to Use
 
 *   Clone the repository: `git clone <repository_url>`
