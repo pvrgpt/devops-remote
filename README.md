@@ -1,8 +1,8 @@
-# DevOps Linux and Scripting Practice
+# DevOps Learning and Practice
 
 ## Description
 
-This repository contains practice scripts and notes created while learning foundational Linux command-line skills, Bash scripting, Python scripting, and Git version control, specifically focused on building a base for a career in DevOps.
+This repository contains practice scripts and notes created while learning foundational Linux command-line skills, Bash scripting, Python scripting, Git version control, Intro to Docker, Docker Compose, Intro to AWS Core Services, and AWS Networking & Compute specifically focused on building a base for a career in DevOps.
 
 This follows a structured learning plan aiming to cover core DevOps competencies.
 
