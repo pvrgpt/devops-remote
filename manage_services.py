@@ -64,8 +64,7 @@ elif initial_status is False:
       exit_code = 1
 elif initial_status is None:
     print("Failure: Could not determine initial service status.")
-    exit_code = 1 # Indicate failure
+    exit_code = 1 
 
-# 4. Exit with appropriate code
-print("\n--- Script Finished ---")
+print("\n---Script Finished---")
 sys.exit(exit_code)
