@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains practice scripts and notes created while learning foundational Linux command-line skills, Bash scripting, Python scripting, Git version control, Intro to Docker, Docker Compose, Intro to AWS Core Services, and AWS Networking & Compute specifically focused on building a base for a career in DevOps.
+This repository contains practice scripts and notes created while learning foundational **Linux command-line skills, Bash scripting, Python scripting, Git version control, Intro to Docker, Docker Compose, Intro to AWS Core Services, AWS Networking & Compute, Kubernetes(K8s), Infrastructure as Code(Terraform), and CI/CD Integration & Monitoring Basics** specifically focused on building a base for a career in DevOps.
 
 This follows a structured learning plan aiming to cover core DevOps competencies.
 
