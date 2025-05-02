@@ -101,7 +101,7 @@ Introduced the core ideas behind Continuous Integration (CI) and Continuous Deli
 *   Recognized Docker's role in providing consistent build/test environments and as a deployment artifact.
 
 ### 8. AWS Deeper Dive.[VPC(Routing,Security), E2C(AMIs, Storage options, User Data)]
-*   **Creating a custom AMI from an instance**
+*   **Created a custom AMI from an instance and modified Security Group**
     *   Prepare SSH Key and Security Group.
     *   Launch EC2 Instance with User Data.
     *   Verify Nginx Installation: Connect via SSH and check if Nginx is running without manual installation. Test web access.
