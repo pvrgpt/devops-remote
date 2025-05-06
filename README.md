@@ -111,7 +111,7 @@ Introduced the core ideas behind Continuous Integration (CI) and Continuous Deli
     *   Verify New Instance.
     *   Terminate Second Instance.
 
-## 8. Introduction to Kubernetes (K8s)
+## 9. Introduction to Kubernetes (K8s)
 
 Transitioned from Docker/Compose to understanding container orchestration for running applications at scale.
 
