@@ -110,6 +110,51 @@ Introduced the core ideas behind Continuous Integration (CI) and Continuous Deli
     *   Launch New Instance from Custom AMI.
     *   Verify New Instance.
     *   Terminate Second Instance.
+
+## 8. Introduction to Kubernetes (K8s)
+
+Transitioned from Docker/Compose to understanding container orchestration for running applications at scale.
+
+### Core Concepts:
+- **Problems Solved:** Addressed challenges beyond Docker Compose like scaling, self-healing, service discovery, and rolling updates.
+- **Declarative Model:** Defined desired state using YAML manifests, letting Kubernetes reconcile the current state.
+- **Basic Architecture:**
+    - **Control Plane:** API Server, etcd, Scheduler, Controller Manager.
+    - **Nodes (Workers):** Kubelet, Kube-proxy, Container Runtime.
+
+### Key Kubernetes Objects:
+- **Pods:** Smallest deployable unit, encapsulating one or more containers, storage, and network IP. Ephemeral.
+- **Deployments:** Manage stateless applications by declaratively defining Pod replicas and handling rolling updates/rollbacks via ReplicaSets. Provides self-healing.
+- **Services:** Provide stable network endpoints (IP/DNS) and load balancing to access a set of Pods.
+    - Types explored: `ClusterIP` (internal), (briefly mentioned `NodePort`, `LoadBalancer`).
+- **Namespaces:** Partition a physical cluster into virtual clusters for organization, access control, and resource quotas. Used `default`, `kube-system`, and created custom `dev`/`staging` namespaces.
+- **ConfigMaps:** Store non-confidential configuration data as key-value pairs.
+- **Secrets:** Store sensitive data (passwords, API keys). Values are base64 encoded.
+    - Consumed ConfigMaps/Secrets in Pods via environment variables and volume mounts.
+
+### Interaction Tool: `kubectl`
+- The primary command-line tool for interacting with the Kubernetes API.
+- **Setup:** Enabled Kubernetes in Docker Desktop and configured `kubectl`.
+- **Basic Commands:**
+    - `kubectl config current-context`, `kubectl cluster-info`, `kubectl get nodes`
+    - `kubectl get pods/services/deployments/namespaces [-n <namespace>] [-A]`
+    - `kubectl describe <type> <name> [-n <namespace>]`
+    - `kubectl apply -f <filename.yaml>` (for creating/updating resources)
+    - `kubectl delete -f <filename.yaml>` (for deleting resources)
+    - `kubectl logs <pod_name> [-f] [-n <namespace>]`
+    - `kubectl exec -it <pod_name> -- bash [-n <namespace>]`
+    - `kubectl scale deployment <name> --replicas=<count> [-n <namespace>]`
+    - `kubectl port-forward service/<service_name> <local_port>:<service_port> [-n <namespace>]`
+- **YAML Manifests:** Learned to define Deployments, Services, Namespaces, ConfigMaps, and Secrets using YAML.
+
+### Practical Exercises:
+- Deployed Nginx using YAML manifests (Deployment and Service).
+- Deployed Nginx into separate `dev` and `staging` namespaces.
+- Created and consumed ConfigMaps and Secrets in a Pod.
+
+---
+*(Next up in K8s: Persistent Volumes, different Service types in detail, advanced Deployment strategies)*
+
 ## How to Use
 
 *   Clone the repository: `git clone <repository_url>`
