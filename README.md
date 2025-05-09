@@ -44,7 +44,6 @@ This repository documents the initial phases of the learning plan:
     *   Command Substitution (`$(...)`)
     *   Conditional Logic (`if`, `elif`, `else`, `[ ]`, file/string/numeric tests)
     *   Loops (`for`, `while`, reading files line-by-line)
-    *   Example Scripts: `checker.sh`, `user_processor.sh`, `read_file.sh` (if you created them)
 *   **Python Scripting (for DevOps):**
     *   Setup (`python3`, `pip`, `venv`) - Understanding PEP 668.
     *   Basic Syntax & Data Types (`str`, `int`, `float`, `bool`, `list`, `dict`, `None`)
